@@ -24,5 +24,22 @@ Cargamos los paquetes:
 library(R.utils)
 library(BiocManager)
 ```
+Para alinear archivos FASTQ contra FASTA
 
+```{r}
+BiocManager::install("Rbowtie2")
+```
+
+Cargamos el paquete:
+
+```{r}
+BiocManager::install("Rsamtools")a
+```
+
+Este paquete es necesario para manupular resultados de alineación (*.BAM)
+Cargamos el paquete:
+
+```{r}
+library("Rsamtools")
+```
 
