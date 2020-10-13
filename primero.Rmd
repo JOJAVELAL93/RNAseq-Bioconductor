@@ -12,11 +12,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Paquetes
 
 ```{r echo=TRUE, message=TRUE}
-install.packages("R.utils")
+#install.packages("R.utils")
 ```
 Para instalar paquetes de Bioconductor:
 ```{r echo=TRUE, message=TRUE}
-install.packages("BiocManager")
+#install.packages("BiocManager")
 ```
 Cargamos los paquetes:
 
@@ -27,7 +27,7 @@ library(BiocManager)
 Para alinear archivos FASTQ contra FASTA
 
 ```{r echo=TRUE, message=TRUE}
-BiocManager::install("Rbowtie2")
+#BiocManager::install("Rbowtie2")
 ```
 
 Cargamos el paquete:
@@ -38,7 +38,7 @@ library("Rbowtie2")
 
 
 ```{r echo=TRUE, message=TRUE}
-BiocManager::install("Rsamtools")
+#BiocManager::install("Rsamtools")
 ```
 
 Este paquete es necesario para manupular resultados de alineación (*.BAM)
@@ -138,6 +138,9 @@ Se deben crear dos archivos, uno con extensión BAM y otro con extensión *.bam.
 ```{r echo=TRUE}
 dir()
 ```
+Ahora se puede visualizar desde IGV por ejemplo.
+
+Cargamos el genoma que se encuentra en la carpeta **chromosomes**, luego en load from file, en la capeta genes, cargamos los genes por medio de un archivo *.gff.
 
 
 
