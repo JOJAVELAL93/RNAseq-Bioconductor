@@ -142,5 +142,3 @@ Ahora se puede visualizar desde IGV por ejemplo.
 
 Cargamos el genoma que se encuentra en la carpeta **chromosomes**, luego en load from file, en la capeta genes, cargamos los genes por medio de un archivo *.gff.
 
-
-
