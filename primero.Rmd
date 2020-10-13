@@ -118,4 +118,26 @@ bowtie2(bt2Index = "chromosomes/yeast",
         "--threads=3")
 ```
   
-  
+Esto puede tardar unos minutos mientras termina el alineamiento. El comando "--threads=3" es para trabajar con tres núcleos de los disponibles.
+
+Confirmamos la existencia del archivo *.SAM:
+
+```{r echo=TRUE}
+dir()
+```
+Observamos que se ha creado un archivo llamado *1M_SRR9336457.sam*. 
+
+```{r echo=TRUE}
+asBam("1M_SRR9336457.sam")
+```
+
+Este último comando convierte el archivo SAM obtenido por el paso anterior a un archivo BAM binario comprimido.
+
+Se deben crear dos archivos, uno con extensión BAM y otro con extensión *.bam.bai
+
+```{r echo=TRUE}
+dir()
+```
+
+
+
